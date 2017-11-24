@@ -14,6 +14,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController
     @IBOutlet var viewMain: UIView!
     @IBOutlet weak var svBody: UIScrollView!
     let purpleInspireColor = UIColor(red:0.13, green:0.03, blue:0.25, alpha:1.0)
+    
     override func viewDidLoad()
     {
         prepareUI()

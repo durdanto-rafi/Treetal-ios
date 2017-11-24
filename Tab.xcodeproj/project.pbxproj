@@ -17,6 +17,7 @@
 		610955121FC2A08300659B7A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955111FC2A08300659B7A /* ParentViewController.swift */; };
 		610955141FC2A2CE00659B7A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955131FC2A2CE00659B7A /* Player.swift */; };
 		610955161FC2A2DF00659B7A /* Opinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955151FC2A2DF00659B7A /* Opinion.swift */; };
+		614B7D341FC82CD700D4671D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B7D331FC82CD700D4671D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		610955111FC2A08300659B7A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		610955131FC2A2CE00659B7A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		610955151FC2A2DF00659B7A /* Opinion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opinion.swift; sourceTree = "<group>"; };
+		614B7D331FC82CD700D4671D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		903FB4CE4BF3E1137EB70447 /* Pods_Tab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DF964A26686F6D77DD80D0 /* Pods-Tab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tab/Pods-Tab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				610955111FC2A08300659B7A /* ParentViewController.swift */,
 				610955131FC2A2CE00659B7A /* Player.swift */,
 				610955151FC2A2DF00659B7A /* Opinion.swift */,
+				614B7D331FC82CD700D4671D /* CustomTextField.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				610955141FC2A2CE00659B7A /* Player.swift in Sources */,
 				610955161FC2A2DF00659B7A /* Opinion.swift in Sources */,
 				610954E41FC29FDB00659B7A /* AppDelegate.swift in Sources */,
+				614B7D341FC82CD700D4671D /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

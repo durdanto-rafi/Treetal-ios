@@ -9,18 +9,30 @@
 import UIKit
 import XLPagerTabStrip
 
-class Opinion: UIViewController, IndicatorInfoProvider {
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+class Opinion: UIViewController, IndicatorInfoProvider
+{
+    @IBOutlet weak var txtOpinion: UITextField!
+    @IBOutlet weak var txtAddress: UITextField!
+    @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var lblHeading: UILabel!
+    
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo
+    {
         return IndicatorInfo(title : "YOUR OPINION")
     }
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        setOpinionIcon()
+        setNameIcon()
+        setAddressIcon()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -35,5 +47,36 @@ class Opinion: UIViewController, IndicatorInfoProvider {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func setNameIcon()
+    {
+        //txtName.textConte = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
+        txtName.leftViewMode = UITextFieldViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 20, height: 20))
+        let image = UIImage(named: "icon_name")
+        imageView.image = image
+        txtName.leftView = imageView
+        
+    }
+    
+    func setOpinionIcon()
+    {
+        //txtName.textConte = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
+        txtOpinion.leftViewMode = UITextFieldViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 20, height: 20))
+        let image = UIImage(named: "icon_message")
+        imageView.image = image
+        txtOpinion.leftView = imageView
+        
+    }
+    
+    func setAddressIcon()
+    {
+        //txtName.textConte = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
+        txtAddress.leftViewMode = UITextFieldViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 20, height: 20))
+        let image = UIImage(named: "icon_address")
+        imageView.image = image
+        txtAddress.leftView = imageView
+        
+    }
 }
