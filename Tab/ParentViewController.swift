@@ -8,6 +8,7 @@
 
 //import the library
 import XLPagerTabStrip
+
 //Delete UIViewController, and Extend //ButtonBarPagerTabStripViewController instead
 class ParentViewController: ButtonBarPagerTabStripViewController
 {

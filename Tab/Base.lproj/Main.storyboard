@@ -191,6 +191,9 @@
                                 <state key="normal" title="Send">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSend:" destination="dJh-I4-Odc" eventType="touchUpInside" id="g0Y-nH-Ekb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

@@ -106,8 +106,9 @@ class Player: UIViewController, IndicatorInfoProvider {
         
         let defaultRouteReachability = withUnsafePointer(to: &zeroAddress)
         {
-            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
-                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1)
+            {
+                zeroSockAddress in SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
             }
         }
         
@@ -125,8 +126,7 @@ class Player: UIViewController, IndicatorInfoProvider {
     func showALert(title : String, message : String)
     {
         let alertController = UIAlertController(title: title, message:message, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
-
 }
