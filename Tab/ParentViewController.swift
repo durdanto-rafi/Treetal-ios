@@ -17,7 +17,8 @@ class ParentViewController: ButtonBarPagerTabStripViewController
     
     override func viewDidLoad()
     {
-        prepareUI()
+        setBackgroundImage()
+        prepareTabs()
         super.viewDidLoad()
     }
     
@@ -28,12 +29,9 @@ class ParentViewController: ButtonBarPagerTabStripViewController
         return [child_1, child_2]
     }
     
-    func prepareUI()
+    func prepareTabs()
     {
-        self.viewMain.backgroundColor = UIColor(patternImage: UIImage(named: "bg_player")!)
-        
         // change selected bar color
-        //settings.style.buttonBarBackgroundColor = UIColor(patternImage: UIImage(named: "1x1")!)
         //settings.style.buttonBarItemBackgroundColor = UIColor(patternImage: UIImage(named: "blackish_transparent")!)
         settings.style.buttonBarItemBackgroundColor = UIColor.black.withAlphaComponent(0.2)
         settings.style.selectedBarBackgroundColor = .white
@@ -49,5 +47,15 @@ class ParentViewController: ButtonBarPagerTabStripViewController
             oldCell?.label.textColor = .gray
             newCell?.label.textColor = .white
         }
+    }
+    
+    func setBackgroundImage()
+    {
+        UIGraphicsBeginImageContext(view.frame.size)
+        UIImage(named: "bg_player")?.draw(in: self.view.bounds)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        view.backgroundColor = UIColor.init(patternImage: image!)
     }
 }
