@@ -10,9 +10,11 @@ import UIKit
 import XLPagerTabStrip
 import AVFoundation
 import SystemConfiguration
+import ESTMusicIndicator
 
 class Player: UIViewController, IndicatorInfoProvider {
     
+    @IBOutlet weak var esMusicView: ESTMusicIndicatorView!
     // Initialization
     var avPlayer: AVPlayer!
     @IBOutlet weak var btnPlay: UIButton!
@@ -53,6 +55,13 @@ class Player: UIViewController, IndicatorInfoProvider {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        let indicator = ESTMusicIndicatorView.init(frame: CGRect.zero)
+        indicator.tintColor = .red
+        indicator.sizeToFit()
+        indicator.state = .playing;
+        esMusicView.addSubview(indicator)
+        //esMusicView = indicator
     }
 
     override func didReceiveMemoryWarning()

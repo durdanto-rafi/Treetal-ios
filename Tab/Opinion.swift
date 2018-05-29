@@ -8,6 +8,7 @@
 
 import UIKit
 import XLPagerTabStrip
+import SwiftSpinner
 
 class Opinion: UIViewController, IndicatorInfoProvider
 {
@@ -18,7 +19,30 @@ class Opinion: UIViewController, IndicatorInfoProvider
     
     @IBAction func btnSend(_ sender: Any)
     {
-        sendRequest()
+        var errors = [String]()
+        
+        if txtOpinion.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+        {
+            errors.append("Opinion")
+        }
+        if txtName.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+        {
+            errors.append("Name")
+        }
+        if txtAddress.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+        {
+            errors.append("Address")
+        }
+        
+        // Checking validation
+        if errors.isEmpty
+        {
+            sendRequest()
+        }
+        else
+        {
+            showALert(title: "Warning!", message: errors.joined(separator: ", ") + " can't be empty!")
+        }
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo
@@ -32,6 +56,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
         setNameIcon()
         setAddressIcon()
         super.viewDidLoad()
+        hideKeyboard()
 
         // Do any additional setup after loading the view.
     }
@@ -95,11 +120,17 @@ class Opinion: UIViewController, IndicatorInfoProvider
                          ]
         
         guard let url = URL(string: "http://radiotreetalbangla.com/api/v1/request?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MDYxNTQ0MzIsImp0aSI6IkRrZ1dUU0tsbDB1WTBEdnplR1pyZnZ1YUc0bXYwa0kzeFdXN05sczZOQ0R5aWV6Z1BlbjhuZnNyUmxNc2NNWGQiLCJpc3MiOiJ3d3cucmFkaW90cmVldGFsYmFuZ2xhLmNvbSIsIm5iZiI6MTUwNjE1NDQ0MiwiZXhwIjoxNTM3NjkwNDMyfQ.MECm1Cd5r4-C89p-PMKu6pVu5voie6g4daX_LJyttHNUsTzwoVgm0cBZXdbB-LAkYi2nNZqiQ9HJkYgUWPuSbw") else { return }
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
         request.httpBody = httpBody
+        
+//        let hudView = HudView.hud(inView: self, animated: true)
+//        hudView.text = "Turning Off Reminders..."
+        
+        SwiftSpinner.show("Sending request, Please wait for a while!")
         
         let session = URLSession.shared
         session.dataTask(with: request)
@@ -107,7 +138,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
             (data, response, error) in
             if let response = response
             {
-                print(response)
+                print("Response", response)
             }
             
             if let data = data
@@ -115,13 +146,46 @@ class Opinion: UIViewController, IndicatorInfoProvider
                 do
                 {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
+                    print("Success", json)
+                    
+                    DispatchQueue.main.async()
+                    {
+                        // your UI update code
+                        self.showALert(title: "", message: "Request sent successfully!")
+                        
+                        self.txtOpinion.text = ""
+                        self.txtName.text = ""
+                        self.txtAddress.text = ""
+                    }
                 }
                 catch
                 {
-                    print(error)
+                    print("Error", error)
                 }
             }
         }.resume()
+    }
+    
+    // Displaying Alert
+    func showALert(title : String, message : String)
+    {
+        SwiftSpinner.show(message, animated: false).addTapHandler({SwiftSpinner.hide()}, subtitle: "Tap to dismiss!")
+    }
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 }

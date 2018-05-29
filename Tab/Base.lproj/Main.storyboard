@@ -58,6 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="80.50974512743629"/>
         </scene>
         <!--Player-->
         <scene sceneID="gUU-oE-ngK">
@@ -84,6 +85,24 @@
                                     <action selector="btnPlayTapped:" destination="kUQ-5j-0Et" eventType="touchUpInside" id="Za2-5X-Vtw"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXc-r9-ViO" customClass="ESTMusicIndicatorView" customModule="ESTMusicIndicator">
+                                <rect key="frame" x="137" y="325" width="101" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="www" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-2X-MfT">
+                                <rect key="frame" x="160" y="610" width="54" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBG-Sj-OJy">
+                                <rect key="frame" x="150" y="423" width="310" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="MMt-2e-lWw"/>
+                                    <constraint firstAttribute="height" constant="35" id="PJC-Kg-VZV"/>
+                                    <constraint firstAttribute="width" secondItem="NBG-Sj-OJy" secondAttribute="height" multiplier="155:128" id="wqa-q0-Ww0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="facebook"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -98,6 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="btnPlay" destination="PDN-li-SS0" id="CaV-gK-9mk"/>
+                        <outlet property="esMusicView" destination="MXc-r9-ViO" id="Jsw-vI-svQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12P-Bu-RlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -232,7 +252,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="256" height="256"/>
         <image name="logo_with_bg" width="466" height="386"/>
         <image name="play" width="200" height="203"/>
+        <image name="www" width="256" height="256"/>
     </resources>
 </document>
