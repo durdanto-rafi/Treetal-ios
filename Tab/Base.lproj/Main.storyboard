@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8IB-iQ-sOp" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="pEO-Sl-eib"/>
+                                    <constraint firstAttribute="height" constant="70" id="pEO-Sl-eib"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xif-Ki-S4v">
                                     <size key="itemSize" width="50" height="50"/>
@@ -34,7 +34,7 @@
                                 <cells/>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-tw-3Xo">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </scrollView>
                         </subviews>
@@ -58,7 +58,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669.60000000000002" y="80.50974512743629"/>
         </scene>
         <!--Player-->
         <scene sceneID="gUU-oE-ngK">
@@ -85,24 +84,6 @@
                                     <action selector="btnPlayTapped:" destination="kUQ-5j-0Et" eventType="touchUpInside" id="Za2-5X-Vtw"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXc-r9-ViO" customClass="ESTMusicIndicatorView" customModule="ESTMusicIndicator">
-                                <rect key="frame" x="137" y="325" width="101" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="www" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-2X-MfT">
-                                <rect key="frame" x="160" y="610" width="54" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBG-Sj-OJy">
-                                <rect key="frame" x="150" y="423" width="310" height="256"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="MMt-2e-lWw"/>
-                                    <constraint firstAttribute="height" constant="35" id="PJC-Kg-VZV"/>
-                                    <constraint firstAttribute="width" secondItem="NBG-Sj-OJy" secondAttribute="height" multiplier="155:128" id="wqa-q0-Ww0"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="facebook"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -117,7 +98,6 @@
                     </view>
                     <connections>
                         <outlet property="btnPlay" destination="PDN-li-SS0" id="CaV-gK-9mk"/>
-                        <outlet property="esMusicView" destination="MXc-r9-ViO" id="Jsw-vI-svQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12P-Bu-RlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,9 +232,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="facebook" width="256" height="256"/>
         <image name="logo_with_bg" width="466" height="386"/>
         <image name="play" width="200" height="203"/>
-        <image name="www" width="256" height="256"/>
     </resources>
 </document>

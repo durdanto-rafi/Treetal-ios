@@ -11,6 +11,7 @@ import XLPagerTabStrip
 import AVFoundation
 import SystemConfiguration
 import ESTMusicIndicator
+import SwiftSpinner
 
 class Player: UIViewController, IndicatorInfoProvider {
     
@@ -37,6 +38,7 @@ class Player: UIViewController, IndicatorInfoProvider {
                 btnPlay.setImage(UIImage(named: "stop"), for: UIControlState.normal)
                 self.getStreamingLink()
                 playTapped = true
+                SwiftSpinner.show("Player starting, Please wait for a while!")
             }
             else
             {
@@ -60,7 +62,7 @@ class Player: UIViewController, IndicatorInfoProvider {
         indicator.tintColor = .red
         indicator.sizeToFit()
         indicator.state = .playing;
-        esMusicView.addSubview(indicator)
+        //esMusicView.addSubview(indicator)
         //esMusicView = indicator
     }
 
@@ -103,8 +105,27 @@ class Player: UIViewController, IndicatorInfoProvider {
             print("Failed to set the audio session category and mode: \(error.localizedDescription)")
         }
         
+        avPlayer.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions.new, context: nil)
         avPlayer.play()
+        
+        
+        
+        
     }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context:UnsafeMutableRawPointer?)
+    {
+        if keyPath == "rate"
+        {
+            if avPlayer.rate > 0
+            {
+                print("video started")
+                SwiftSpinner.hide()
+            }
+        }
+    }
+    
+    
     
     // Checking for Internet connectivity
     func isInternetAvailable() -> Bool

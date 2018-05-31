@@ -17,6 +17,8 @@ class Opinion: UIViewController, IndicatorInfoProvider
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var lblHeading: UILabel!
     
+    let opinionApiLink = "http://radiotreetalbangla.com/api/v1/request?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MDYxNTQ0MzIsImp0aSI6IkRrZ1dUU0tsbDB1WTBEdnplR1pyZnZ1YUc0bXYwa0kzeFdXN05sczZOQ0R5aWV6Z1BlbjhuZnNyUmxNc2NNWGQiLCJpc3MiOiJ3d3cucmFkaW90cmVldGFsYmFuZ2xhLmNvbSIsIm5iZiI6MTUwNjE1NDQ0MiwiZXhwIjoxNTM3NjkwNDMyfQ.MECm1Cd5r4-C89p-PMKu6pVu5voie6g4daX_LJyttHNUsTzwoVgm0cBZXdbB-LAkYi2nNZqiQ9HJkYgUWPuSbw"
+    
     @IBAction func btnSend(_ sender: Any)
     {
         var errors = [String]()
@@ -49,14 +51,14 @@ class Opinion: UIViewController, IndicatorInfoProvider
     {
         return IndicatorInfo(title : "YOUR OPINION")
     }
-
+    
     override func viewDidLoad()
     {
         setOpinionIcon()
         setNameIcon()
         setAddressIcon()
-        super.viewDidLoad()
         hideKeyboard()
+        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
@@ -96,7 +98,6 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let image = UIImage(named: "icon_message")
         imageView.image = image
         txtOpinion.leftView = imageView
-        
     }
     
     func setAddressIcon()
@@ -107,7 +108,6 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let image = UIImage(named: "icon_address")
         imageView.image = image
         txtAddress.leftView = imageView
-        
     }
     
     func sendRequest()
@@ -119,16 +119,13 @@ class Opinion: UIViewController, IndicatorInfoProvider
                             "location": txtAddress.text!
                          ]
         
-        guard let url = URL(string: "http://radiotreetalbangla.com/api/v1/request?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MDYxNTQ0MzIsImp0aSI6IkRrZ1dUU0tsbDB1WTBEdnplR1pyZnZ1YUc0bXYwa0kzeFdXN05sczZOQ0R5aWV6Z1BlbjhuZnNyUmxNc2NNWGQiLCJpc3MiOiJ3d3cucmFkaW90cmVldGFsYmFuZ2xhLmNvbSIsIm5iZiI6MTUwNjE1NDQ0MiwiZXhwIjoxNTM3NjkwNDMyfQ.MECm1Cd5r4-C89p-PMKu6pVu5voie6g4daX_LJyttHNUsTzwoVgm0cBZXdbB-LAkYi2nNZqiQ9HJkYgUWPuSbw") else { return }
+        guard let url = URL(string: opinionApiLink) else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
         request.httpBody = httpBody
-        
-//        let hudView = HudView.hud(inView: self, animated: true)
-//        hudView.text = "Turning Off Reminders..."
         
         SwiftSpinner.show("Sending request, Please wait for a while!")
         

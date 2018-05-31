@@ -8,6 +8,7 @@
 
 //import the library
 import XLPagerTabStrip
+import SwiftSpinner
 
 //Delete UIViewController, and Extend //ButtonBarPagerTabStripViewController instead
 class ParentViewController: ButtonBarPagerTabStripViewController
@@ -20,6 +21,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController
     {
         setBackgroundImage()
         prepareTabs()
+        SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 18.0))
         super.viewDidLoad()
     }
     
