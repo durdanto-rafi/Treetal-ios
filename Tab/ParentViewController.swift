@@ -10,6 +10,7 @@
 import XLPagerTabStrip
 import SwiftSpinner
 
+
 //Delete UIViewController, and Extend //ButtonBarPagerTabStripViewController instead
 class ParentViewController: ButtonBarPagerTabStripViewController
 {

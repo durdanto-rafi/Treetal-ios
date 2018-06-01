@@ -9,6 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 import SwiftSpinner
+import SystemConfiguration
 
 class Opinion: UIViewController, IndicatorInfoProvider
 {
@@ -17,33 +18,47 @@ class Opinion: UIViewController, IndicatorInfoProvider
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var lblHeading: UILabel!
     
+    @IBAction func btnIHTapped(_ sender: Any)
+    {
+        if let url = URL(string: "http://intelle-hub.com")
+        {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     let opinionApiLink = "http://radiotreetalbangla.com/api/v1/request?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MDYxNTQ0MzIsImp0aSI6IkRrZ1dUU0tsbDB1WTBEdnplR1pyZnZ1YUc0bXYwa0kzeFdXN05sczZOQ0R5aWV6Z1BlbjhuZnNyUmxNc2NNWGQiLCJpc3MiOiJ3d3cucmFkaW90cmVldGFsYmFuZ2xhLmNvbSIsIm5iZiI6MTUwNjE1NDQ0MiwiZXhwIjoxNTM3NjkwNDMyfQ.MECm1Cd5r4-C89p-PMKu6pVu5voie6g4daX_LJyttHNUsTzwoVgm0cBZXdbB-LAkYi2nNZqiQ9HJkYgUWPuSbw"
     
     @IBAction func btnSend(_ sender: Any)
     {
-        var errors = [String]()
-        
-        if txtOpinion.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+        if isInternetAvailable()
         {
-            errors.append("Opinion")
-        }
-        if txtName.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
-        {
-            errors.append("Name")
-        }
-        if txtAddress.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
-        {
-            errors.append("Address")
-        }
-        
-        // Checking validation
-        if errors.isEmpty
-        {
-            sendRequest()
+            var errors = [String]()
+            
+            if txtOpinion.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+            {
+                errors.append("Opinion")
+            }
+            if txtName.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+            {
+                errors.append("Name")
+            }
+            if txtAddress.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true
+            {
+                errors.append("Address")
+            }
+            
+            // Checking validation
+            if errors.isEmpty
+            {
+                sendRequest()
+            }
+            else
+            {
+                showALert(title: "Warning!", message: errors.joined(separator: ", ") + " can't be empty!")
+            }
         }
         else
         {
-            showALert(title: "Warning!", message: errors.joined(separator: ", ") + " can't be empty!")
+            showALert(title: "Warning!", message: "Connect to Internet first!")
         }
     }
     
@@ -104,7 +119,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
     {
         //txtName.textConte = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
         txtAddress.leftViewMode = UITextFieldViewMode.always
-        let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 20, height: 20))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         let image = UIImage(named: "icon_address")
         imageView.image = image
         txtAddress.leftView = imageView
@@ -113,7 +128,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
     func sendRequest()
     {
         let parameters = [
-                            "source": "iOS Swift 4",
+                            "source": "iOS Swift4",
                             "song_name": txtOpinion.text!,
                             "name": txtName.text!,
                             "location": txtAddress.text!
@@ -145,11 +160,10 @@ class Opinion: UIViewController, IndicatorInfoProvider
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     print("Success", json)
                     
+                    // Accessing UI from background task
                     DispatchQueue.main.async()
                     {
-                        // your UI update code
                         self.showALert(title: "", message: "Request sent successfully!")
-                        
                         self.txtOpinion.text = ""
                         self.txtName.text = ""
                         self.txtAddress.text = ""
@@ -167,6 +181,31 @@ class Opinion: UIViewController, IndicatorInfoProvider
     func showALert(title : String, message : String)
     {
         SwiftSpinner.show(message, animated: false).addTapHandler({SwiftSpinner.hide()}, subtitle: "Tap to dismiss!")
+    }
+    
+    // Checking for Internet connectivity
+    func isInternetAvailable() -> Bool
+    {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress)
+        {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1)
+            {
+                zeroSockAddress in SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags = SCNetworkReachabilityFlags()
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags)
+        {
+            return false
+        }
+        let isReachable = flags.contains(.reachable)
+        let needsConnection = flags.contains(.connectionRequired)
+        return (isReachable && !needsConnection)
     }
 }
 

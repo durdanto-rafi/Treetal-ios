@@ -21,6 +21,30 @@ class Player: UIViewController, IndicatorInfoProvider {
     @IBOutlet weak var btnPlay: UIButton!
     var playTapped : Bool = false
     
+    @IBAction func btnFacebookTapped(_ sender: Any)
+    {
+        if let url = URL(string: "http://facebook.com")
+        {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func btnWebsiteTapped(_ sender: Any)
+    {
+        if let url = URL(string: "http://radiotreetal.com")
+        {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func btnYoutubeTapped(_ sender: Any)
+    {
+        if let url = URL(string: "http://youtube.com")
+        {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
     // Indicator Info for current selected screen
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo
     {
@@ -38,7 +62,7 @@ class Player: UIViewController, IndicatorInfoProvider {
                 btnPlay.setImage(UIImage(named: "stop"), for: UIControlState.normal)
                 self.getStreamingLink()
                 playTapped = true
-                SwiftSpinner.show("Player starting, Please wait for a while!")
+                SwiftSpinner.show("Player initializing, Please wait for a while!")
             }
             else
             {
@@ -56,14 +80,13 @@ class Player: UIViewController, IndicatorInfoProvider {
     }
     override func viewDidLoad()
     {
-        super.viewDidLoad()
-        
         let indicator = ESTMusicIndicatorView.init(frame: CGRect.zero)
         indicator.tintColor = .red
         indicator.sizeToFit()
         indicator.state = .playing;
         //esMusicView.addSubview(indicator)
         //esMusicView = indicator
+        super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning()
@@ -107,19 +130,16 @@ class Player: UIViewController, IndicatorInfoProvider {
         
         avPlayer.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions.new, context: nil)
         avPlayer.play()
-        
-        
-        
-        
     }
     
+    // Fire on play start
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context:UnsafeMutableRawPointer?)
     {
         if keyPath == "rate"
         {
             if avPlayer.rate > 0
             {
-                print("video started")
+                print("play started")
                 SwiftSpinner.hide()
             }
         }
