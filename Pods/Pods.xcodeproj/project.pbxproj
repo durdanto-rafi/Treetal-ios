@@ -7,168 +7,234 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10212BA1412C6A2A27327AEC4A24B5DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
-		13E7CE046B2741C9BFDFFD1A1C86401F /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003845E103FAF5AAB35DAAE7A3A99CEF /* PagerTabStripViewController.swift */; };
-		149559B9681BDEDA61317D10B3F7AEB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		1B49AC11AD3D2E1CD701330D36252FB2 /* ESTMusicIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C82EE28B4D76DD4569621A94ED3F230F /* ESTMusicIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B6C768E48AA3967E97B0970DB10397C /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01C5FFACD0ACBBC42C99A1A8B7A9FA /* BarPagerTabStripViewController.swift */; };
-		1C12354D6318DEF453285B9902D0E7EC /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F360C140C98CE39B451F4FE2D1CF7C /* SwipeDirection.swift */; };
-		20A5E1B491FE4631BEA49C89904491E9 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 40DA83A30DDD0566F850C4A6BBEB4BC6 /* ButtonCell.xib */; };
-		3098D20E3FCCECEF0E84D720DECC8363 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B81BD1C31287708F9E263F192782D24 /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		337AD114D41D222D827FC299CD096900 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E342514CB1C00B8FF9076DAE176F3ED /* XLPagerTabStrip.bundle */; };
-		3727CF2D7AC207BC8F18B31A7B8086B4 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1DF6423AB9820EAD2AA5A4631AD3C5 /* PagerTabStripBehaviour.swift */; };
-		3B0EEFC5488A72C43633A04173155D3D /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE43C7C6CE03BA2A014F6BCB99A5DD0 /* SegmentedPagerTabStripViewController.swift */; };
-		4891053D2D079FEEA7A56624EA96B5AD /* Pods-Tab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5C4CB12D468294B216493A3A5F33F /* Pods-Tab-dummy.m */; };
-		4E6C0368D5270946274FF5936B5CE325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		4E9093D5FCC9BD254695090E90AFB1C4 /* Pods-Tab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F4E58366B9F31DA9C84A5BE93DD096F /* Pods-Tab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		670134C22DB85D63CB302FB01782643B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		68D398398D5C03DA76260C0483556A5F /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7FACF2990AD88F3973264A5CA824C /* BarView.swift */; };
-		6A329EA61227039461A1F5E39CD4E2E2 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C70C0ED89C0017F55FA11A8E7FAA0A /* PagerTabStripError.swift */; };
-		6C0158BAF7F5FF2AB80A937F9A4D8BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
-		7206F7F4615964EE88BA550E4254564C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		73E63E527EB6352DACBF0EA14E528C73 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
-		77FBDBC724F5A3F9AE346DF718FCF520 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40DA83A30DDD0566F850C4A6BBEB4BC6 /* ButtonCell.xib */; };
-		79D3E12578113FFDE55637D3CBDC9CBD /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B19A3400379FFA60D18B93F059D534 /* SwiftSpinner.swift */; };
-		86AD8E8E4045398A0A9F325A04249CC6 /* ESTMusicIndicatorContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FED7B5CB1A129616ABD39C15276FF7 /* ESTMusicIndicatorContentView.swift */; };
-		93A2A111FC4E38A5607228CFBC8473B9 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105AF67AEC576545560DEA24FE4918D /* SwiftSpinner-dummy.m */; };
-		9BA6925C474A91FCE41C896D276CCA57 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59208D913AFBCD1C5892179A03D4F4A3 /* BaseButtonBarPagerTabStripViewController.swift */; };
-		9CF01F23321226AB38D1743F7CF55541 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6B187BB7DFBBCA1E2455652DB7AFA8 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB690E6E012506D4506052D485AA1650 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840B3ED13A3CB6A9989422A1BD9F854 /* IndicatorInfo.swift */; };
-		B8B0DFDE8E92D07E42CC9D47BD64183D /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED9442496288B087BB56D5F7EDFF17 /* ButtonBarView.swift */; };
-		C4FA97C58A4DA27B422ABEB363F8CFB5 /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2D28441116DE9B3997D007FC246DF0 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5D4003C3BD8CCDBBE9BC7E88FC3E231 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34167EEFEA2EF0B70D007899FEC898F2 /* ButtonBarPagerTabStripViewController.swift */; };
-		D8FEA1D21CCD042C8DEDDFBD62641901 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AED2562D56A9127AAAC62D3131C3804 /* ButtonBarViewCell.swift */; };
-		DFFF96E8C7CDF6F7EEA257990B173566 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868969C16841E600F69266D7304F588 /* TwitterPagerTabStripViewController.swift */; };
-		E7ABDCF9C6246909CEF994CC5E75D165 /* ESTMusicIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EFAF26E790CB65F09619340A98FAFC /* ESTMusicIndicatorView.swift */; };
-		F04B8D160EF1E57CD1FDAE662A004899 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EE7E1C0291A26C5D44F5692319C6E0 /* XLPagerTabStrip-dummy.m */; };
-		F4F34C78FC1D833FF4C88058DEE74CCB /* ESTMusicIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBE30F79A60F841F326EDBC7EC41BB /* ESTMusicIndicator-dummy.m */; };
-		F75276BAC4CC82B7061E236690AE9405 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EA64CAAA735390452FFF7E87FF2BF038 /* FXPageControl.m */; };
-		FF2E457E42E42A6E46F96B4E7BD61004 /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3C8A271DE738E818C39AC88807E8F2 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00594B0AB47A69A73615D54FEAE86BC8 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AA501CDB8D6F07E8F1E09A7AB5F10C /* BarPagerTabStripViewController.swift */; };
+		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCBCDD5FE41D126889D0EFA7CA464C /* IQToolbar.swift */; };
+		1AD54D85BB45539A6E173681DACB7C54 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1E59B5374EFDE9A2CAA6C19530498 /* XLPagerTabStrip.bundle */; };
+		1B074749607463F9FBBC073BAFE69B3E /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF02C2D0732987F5CD3F253ABE0CBC87 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B49AC11AD3D2E1CD701330D36252FB2 /* ESTMusicIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A255DB8F0232D702002D88640C53B8D /* ESTMusicIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E31E2513652005794C65A06063F8D06 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 20D4F3C55FD7BA51F55ED7D9BD82C1FA /* ButtonCell.xib */; };
+		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A6B1F038E37B6142B7C941BBDE49D6 /* IQTitleBarButtonItem.swift */; };
+		21A82CC9E785672CFB776B2A347E8196 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DE17CACE5934E8D884EACCBDBA17F /* ButtonBarViewCell.swift */; };
+		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52C4BAF19CDE8BFF7A64C3A485DFF5 /* IQUIScrollView+Additions.swift */; };
+		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FE6BCB36148D38E1E6BF43074FADA /* IQKeyboardManager.bundle */; };
+		2E37753CF11E7512482E6AB789FC3623 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E6BA51DFC2F3500106E77175781320 /* FXPageControl.m */; };
+		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D7FA2593F3BE58FBA85CA0C8248F67 /* IQUIView+Hierarchy.swift */; };
+		34772ABA29B3E57315FF88425BE45B6B /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B090C06BB93065586DE016E6CA1E0A /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40E8952F09526866EDDBC88464726B34 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D007760AF04DD9F2E3666F664500A /* SwipeDirection.swift */; };
+		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334C249255AFE87A0A82D0828F67CD /* IQKeyboardManager.swift */; };
+		4CA6C0005A0B35C02ECD67F6E31482E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		634BC097A6CCC9BFABB9752BA0934F50 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBC8DF02C508E8B629373BD60C51D67 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6448104184B5860017C103F92B359ECF /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C45524CC14675EB2E5BB374028127 /* SwiftSpinner.swift */; };
+		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4297D17C91A4FB384E5E576CA204B1C3 /* IQUIWindow+Hierarchy.swift */; };
+		670134C22DB85D63CB302FB01782643B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		69F309D14F21839461F9D21E3A174870 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC603660124F75827214B8423F63067 /* SwiftSpinner-dummy.m */; };
+		6B38AAC02E4A126C9F8E5FFDBE96C40C /* Pods-Tab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5C4CB12D468294B216493A3A5F33F /* Pods-Tab-dummy.m */; };
+		6EE774D2C5363B8CB0A5966C35999481 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DABBEBB4830A11F762E57ACDC4C15A /* PagerTabStripError.swift */; };
+		73E63E527EB6352DACBF0EA14E528C73 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
+		81555934A91F7DEAA6F45C19AE3B7981 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2747ADA45E05E5EA550114A026B753 /* XLPagerTabStrip-dummy.m */; };
+		81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
+		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A31DEF6B561BE6E18A7DEE5046531 /* IQUIViewController+Additions.swift */; };
+		86AD8E8E4045398A0A9F325A04249CC6 /* ESTMusicIndicatorContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CAE2E668E110329CEE921C6698A093 /* ESTMusicIndicatorContentView.swift */; };
+		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AA7FFCF7BF3F64BF5DE7540BF7EAD8 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84468B5C6706F9F081283E94A6A26210 /* IQTextView.swift */; };
+		88F1B199898D827F076C7E5D2801C74E /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F127718EC617C0924CF13F4FE3E0F /* ButtonBarView.swift */; };
+		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A68CA625F298F326D2010042338DF8 /* IQKeyboardManagerConstants.swift */; };
+		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC932828A912E0F3FF845F80A1AB2B6 /* IQUIView+IQKeyboardToolbar.swift */; };
+		9FFC7A1BAD4F5A1E08F1E7CEA2988478 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		A05CF71AD2C9DA6CF649FC09EF65A06C /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C1285C43A75983DAB07E3EDCF6D3F /* ButtonBarPagerTabStripViewController.swift */; };
+		A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		A53741E54CCF36099062B7C4478A0423 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A5FB4146FAC7A8F0EC42C2D352E6 /* SegmentedPagerTabStripViewController.swift */; };
+		AD6AE38029D5E372DA0602FA1F1C8749 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D4F3C55FD7BA51F55ED7D9BD82C1FA /* ButtonCell.xib */; };
+		AE0C90F0259E089BFBB577EE6B095524 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E3ABB2FBBB297578D7F661E362EC06 /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44859A063BF42583A17FC4DF97F437E7 /* IQKeyboardManagerSwift-dummy.m */; };
+		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5511F6809070DA55C4EC4FD694BD4D /* IQUITextFieldView+Additions.swift */; };
+		B35688AFA0303C1E1A5114C8DBF27F22 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C941E5F86CB9158B79923BA7419AAB /* PagerTabStripBehaviour.swift */; };
+		B68EF40152EDAF9ED712B6F924EAE284 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB561367046E700A3CB207C40DFA09F /* IndicatorInfo.swift */; };
+		BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
+		C076F5EEB40C0F44E94718B19CC7C5E6 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3CEC7F1E6CAB07AFB0158380B7C82 /* BaseButtonBarPagerTabStripViewController.swift */; };
+		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85B4CB1CFC7A9E89C2506EF126D2D30 /* IQKeyboardReturnKeyHandler.swift */; };
+		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E6E4A91342D0DA06CA7F4E5C8D7082 /* IQPreviousNextView.swift */; };
+		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E51B7EAD40BC3FB510C71F19D8F7744 /* IQNSArray+Sort.swift */; };
+		CDF5DB75C504FA6482B8812E9E057337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		D319076257AEAC6E220A6F246AE61F7F /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD404E69F1F19BC126C93A058BF592ED /* PagerTabStripViewController.swift */; };
+		E257BCF3600A6A10FB87C33CCCD0149D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		E5D3B12F2AD6600B48249E3811C114CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		E7ABDCF9C6246909CEF994CC5E75D165 /* ESTMusicIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4742A297C014FFB79E689C2B927694F3 /* ESTMusicIndicatorView.swift */; };
+		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5AB655E99D4A8D605E44D436AB7CD /* IQKeyboardManagerConstantsInternal.swift */; };
+		EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0628D742E55EA48EE9CA195DFB0D6616 /* IQBarButtonItem.swift */; };
+		F4F34C78FC1D833FF4C88058DEE74CCB /* ESTMusicIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA0F895453A90386B98537F7287FB6 /* ESTMusicIndicator-dummy.m */; };
+		F9B5507F453BC70AA37A4645CB4CC312 /* Pods-Tab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F4E58366B9F31DA9C84A5BE93DD096F /* Pods-Tab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F7EE1F6DFC619AFA7EA2CCF07C352 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5DF09DF7FC4C923FC2CD2EE3A78EA /* BarView.swift */; };
+		FED3FA19B49C30D8BE409A39D132DD7B /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C8A46CD33235ADA85CF433F4AFBA5C /* TwitterPagerTabStripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		37F700B8D5B110A34963E07C7AE2D086 /* PBXContainerItemProxy */ = {
+		1C9AC707508C1D944A071B8E75285A61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 38679C7C0122059E4E8B517D35339510;
-			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
+			remoteGlobalIDString = 00170C839833BBA75D6ECDFF14E99A98;
+			remoteInfo = XLPagerTabStrip;
 		};
-		59B6497B094BD60D8253574583CF854C /* PBXContainerItemProxy */ = {
+		97B66C226FE8C13248AD91982505B4C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 86076C1B5AE7CFCBC13A29A54E494E17;
-			remoteInfo = SwiftSpinner;
+			remoteGlobalIDString = C235F77E101E742652CCF98FFDFA5182;
+			remoteInfo = IQKeyboardManagerSwift;
 		};
-		A9388525B83CABFB79D2FFEC8DCFB880 /* PBXContainerItemProxy */ = {
+		98B59538CFDB04022D20B562A5B3F9CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FD5FD6B466BE76A6A56858FB9F9B693E;
 			remoteInfo = ESTMusicIndicator;
 		};
-		ACFCAAB995AAAC4A56B99141EA3C3CBB /* PBXContainerItemProxy */ = {
+		D5C366992A7A9DA225E331DFCFA93592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B5CA02424E0E807BACCC3AC4A15D2E87;
-			remoteInfo = XLPagerTabStrip;
+			remoteGlobalIDString = DA6B7B1B77A9B35077428F50E7B03ACC;
+			remoteInfo = SwiftSpinner;
+		};
+		F8B93CAF6F2C675BC8E7C376AB232CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58A3A52056CBB13F5DB61341B6A5676E;
+			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001C8CC0D00EF38B06EA149DA2C57844 /* ESTMusicIndicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESTMusicIndicator.xcconfig; sourceTree = "<group>"; };
-		003845E103FAF5AAB35DAAE7A3A99CEF /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
-		0105AF67AEC576545560DEA24FE4918D /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
-		01C70C0ED89C0017F55FA11A8E7FAA0A /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		05B090C06BB93065586DE016E6CA1E0A /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		0628D742E55EA48EE9CA195DFB0D6616 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		078B1E777649DAE01EAD490DD8502D86 /* Pods-Tab-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tab-acknowledgements.plist"; sourceTree = "<group>"; };
-		093957ABC846D02E9715A26177005E05 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
-		0D8FD1D52C2E86DE9E16F1272C5C8887 /* Pods_Tab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tab.framework; path = "Pods-Tab.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FAA839946B0128F956233EC38BA6C4C /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		08CAE2E668E110329CEE921C6698A093 /* ESTMusicIndicatorContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESTMusicIndicatorContentView.swift; path = Classes/ESTMusicIndicatorContentView.swift; sourceTree = "<group>"; };
+		08E6BA51DFC2F3500106E77175781320 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
 		11FEE133D4C0F0115C5E43F40B812A50 /* Pods-Tab-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tab-resources.sh"; sourceTree = "<group>"; };
-		23EFAF26E790CB65F09619340A98FAFC /* ESTMusicIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESTMusicIndicatorView.swift; path = Classes/ESTMusicIndicatorView.swift; sourceTree = "<group>"; };
-		2D1DF6423AB9820EAD2AA5A4631AD3C5 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
-		326755DADE1B49DE2FA4140D8F4E8397 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
-		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34167EEFEA2EF0B70D007899FEC898F2 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		150D804FE185910BA2B609ADEA2C540E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15334C249255AFE87A0A82D0828F67CD /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		1BB00DDAE99053AC6F238EA99196BDD1 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
+		1C4FE6BCB36148D38E1E6BF43074FADA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		20D4F3C55FD7BA51F55ED7D9BD82C1FA /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		2AB561367046E700A3CB207C40DFA09F /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		2BA1E59B5374EFDE9A2CAA6C19530498 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7C45524CC14675EB2E5BB374028127 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		355019B74DB42647FDA5D94C57E6E38C /* Pods-Tab-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tab-frameworks.sh"; sourceTree = "<group>"; };
-		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		39B19A3400379FFA60D18B93F059D534 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
-		3A6B187BB7DFBBCA1E2455652DB7AFA8 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
-		3AED2562D56A9127AAAC62D3131C3804 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
-		40DA83A30DDD0566F850C4A6BBEB4BC6 /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
-		59208D913AFBCD1C5892179A03D4F4A3 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		5D2D28441116DE9B3997D007FC246DF0 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
-		6AA84AD5989D211B1E5F1BD9EB41727C /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
-		6B81BD1C31287708F9E263F192782D24 /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
-		6BC035CCB5B9500956F56C8B3B5189BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398C1285C43A75983DAB07E3EDCF6D3F /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		3A255DB8F0232D702002D88640C53B8D /* ESTMusicIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESTMusicIndicator-umbrella.h"; sourceTree = "<group>"; };
+		3B5A31DEF6B561BE6E18A7DEE5046531 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		3F0ABFBE1186669AADE1FD4C563AFE0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FEADFA8CCB656CE03DEC6B90BF2BAD /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		4297D17C91A4FB384E5E576CA204B1C3 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		43A6B1F038E37B6142B7C941BBDE49D6 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		44859A063BF42583A17FC4DF97F437E7 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		469E25D134012C153AF464EB8C1987DE /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		4742A297C014FFB79E689C2B927694F3 /* ESTMusicIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESTMusicIndicatorView.swift; path = Classes/ESTMusicIndicatorView.swift; sourceTree = "<group>"; };
+		48D867410620D70394082B709317A53B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491B06F2201D1AA5FF725CB165F14325 /* ESTMusicIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESTMusicIndicator-prefix.pch"; sourceTree = "<group>"; };
+		4E51B7EAD40BC3FB510C71F19D8F7744 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		4FC603660124F75827214B8423F63067 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		53134EC0365CFAB89E59243F9213AE09 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		58D7FA2593F3BE58FBA85CA0C8248F67 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		5BB5DF09DF7FC4C923FC2CD2EE3A78EA /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
+		5D27559ED91BE37EAA757C6E8B966450 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		5EEC8829BE628BB0DDD5984D41BA41C9 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AA501CDB8D6F07E8F1E09A7AB5F10C /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		6F2747ADA45E05E5EA550114A026B753 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
 		6F4E58366B9F31DA9C84A5BE93DD096F /* Pods-Tab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tab-umbrella.h"; sourceTree = "<group>"; };
-		75E51194E6C397D12536B6426A0B5EA1 /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBC8DF02C508E8B629373BD60C51D67 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		75AA7FFCF7BF3F64BF5DE7540BF7EAD8 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		7A6FF21D7F03A5A563CC5D12F7A433CB /* Pods-Tab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tab.release.xcconfig"; sourceTree = "<group>"; };
-		7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		7B5511F6809070DA55C4EC4FD694BD4D /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		82E3ABB2FBBB297578D7F661E362EC06 /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		84468B5C6706F9F081283E94A6A26210 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
 		84C5C4CB12D468294B216493A3A5F33F /* Pods-Tab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tab-dummy.m"; sourceTree = "<group>"; };
-		8AF7FACF2990AD88F3973264A5CA824C /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
 		8D0CD2D8140CF9AE1A1A634DD491AC07 /* Pods-Tab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tab.debug.xcconfig"; sourceTree = "<group>"; };
-		8E342514CB1C00B8FF9076DAE176F3ED /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAA0F895453A90386B98537F7287FB6 /* ESTMusicIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESTMusicIndicator-dummy.m"; sourceTree = "<group>"; };
+		9210A5FB4146FAC7A8F0EC42C2D352E6 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E6F78E2C2C42F567A9535B3FBDD07A /* ESTMusicIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ESTMusicIndicator.modulemap; sourceTree = "<group>"; };
 		991CFD6BB0883A19EE4F5C0125DD4E09 /* Pods-Tab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tab.modulemap"; sourceTree = "<group>"; };
-		9CE43C7C6CE03BA2A014F6BCB99A5DD0 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		A0347307567C61202B8EEB11C5FB5443 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
-		B1CC35EF9C99A95BDD3B245B684E765A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDE7DE0F6EB7768541D7925C8D8CA0E /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		A6A68CA625F298F326D2010042338DF8 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		AB56A6D0C80FAF34D05FA86DFA2C91F2 /* ESTMusicIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESTMusicIndicator.framework; path = ESTMusicIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B579F01F4F0FDF245C79875272C8D749 /* Pods-Tab-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tab-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B840B3ED13A3CB6A9989422A1BD9F854 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
-		BC3C8A271DE738E818C39AC88807E8F2 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
-		C323198612B840822B429ADC6BACC0DB /* ESTMusicIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ESTMusicIndicator.modulemap; sourceTree = "<group>"; };
-		C668E7A1405B9171D5C163C4CF30082F /* ESTMusicIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESTMusicIndicator-prefix.pch"; sourceTree = "<group>"; };
-		C82EE28B4D76DD4569621A94ED3F230F /* ESTMusicIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESTMusicIndicator-umbrella.h"; sourceTree = "<group>"; };
-		CC4231497C4F5C07BCCE63D63F4A7673 /* ESTMusicIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESTMusicIndicator.framework; path = ESTMusicIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0643089A6B38173AE2CCEAD9F6AB835 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D481AD8D97300EBD0CE0046788B4DF16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4EE7E1C0291A26C5D44F5692319C6E0 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
-		D868969C16841E600F69266D7304F588 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		E2ED9442496288B087BB56D5F7EDFF17 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		B9ABFE43BECC6F41F7811FC5A5F4C71B /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		C23399F86371C5EF43E5806C99DCECE6 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76D007760AF04DD9F2E3666F664500A /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		C774DB53AC67A012646718E0C7DD10D3 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		CAA3CEC7F1E6CAB07AFB0158380B7C82 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		CE52C4BAF19CDE8BFF7A64C3A485DFF5 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		D1DBC794072E0CC73847025D411D9AC1 /* ESTMusicIndicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESTMusicIndicator.xcconfig; sourceTree = "<group>"; };
+		D2C941E5F86CB9158B79923BA7419AAB /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		D5C8A46CD33235ADA85CF433F4AFBA5C /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		D6E6E4A91342D0DA06CA7F4E5C8D7082 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		D8E5E539E5CA399066F66F50C08C2320 /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA3DBD8D0EF1C672819C160092F27FC /* Pods_Tab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tab.framework; path = "Pods-Tab.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF02C2D0732987F5CD3F253ABE0CBC87 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		E1DABBEBB4830A11F762E57ACDC4C15A /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		E2DCBCDD5FE41D126889D0EFA7CA464C /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		E42DE17CACE5934E8D884EACCBDBA17F /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
 		E514C5B641F7A0E8FD6BC2BC63AB5E45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9BBE30F79A60F841F326EDBC7EC41BB /* ESTMusicIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESTMusicIndicator-dummy.m"; sourceTree = "<group>"; };
-		EA64CAAA735390452FFF7E87FF2BF038 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
-		F1FED7B5CB1A129616ABD39C15276FF7 /* ESTMusicIndicatorContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESTMusicIndicatorContentView.swift; path = Classes/ESTMusicIndicatorContentView.swift; sourceTree = "<group>"; };
-		F3549320C3FB89FB195B4BB4716330DD /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
-		F5F360C140C98CE39B451F4FE2D1CF7C /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
-		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		FF01C5FFACD0ACBBC42C99A1A8B7A9FA /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E79F127718EC617C0924CF13F4FE3E0F /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EFC932828A912E0F3FF845F80A1AB2B6 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		F1E5AB655E99D4A8D605E44D436AB7CD /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		F85B4CB1CFC7A9E89C2506EF126D2D30 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		F95920F29DA1D97F13EFEA7FC71F103C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0C4624C9514461C3E887DF81A9200B /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		FD404E69F1F19BC126C93A058BF592ED /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		171933307EED945170D27BF366D147BB /* Frameworks */ = {
+		6AC3586525B9C237E882DB4DE130C264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D3B12F2AD6600B48249E3811C114CF /* Foundation.framework in Frameworks */,
+				E257BCF3600A6A10FB87C33CCCD0149D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A5C814ACEB86CB06CD6C51383982FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */,
+				A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */,
+				81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */,
+				EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8625C6F16E11723CD8691A514A237D98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EC3E4BF926550DCAC3F55E3D318FEDB /* Frameworks */ = {
+		A68ADB0F4B1862612AE4D0BE45003BA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7206F7F4615964EE88BA550E4254564C /* Foundation.framework in Frameworks */,
+				CDF5DB75C504FA6482B8812E9E057337 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCB7D0E5009E449F3A0EB103077CA639 /* Frameworks */ = {
+		F05404D3BD1A56FDD2D9250B231C0A7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E6C0368D5270946274FF5936B5CE325 /* Foundation.framework in Frameworks */,
-				10212BA1412C6A2A27327AEC4A24B5DE /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE6B50CC1EE13590358642D831E21F5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				149559B9681BDEDA61317D10B3F7AEB6 /* Foundation.framework in Frameworks */,
-				6C0158BAF7F5FF2AB80A937F9A4D8BCE /* UIKit.framework in Frameworks */,
+				4CA6C0005A0B35C02ECD67F6E31482E2 /* Foundation.framework in Frameworks */,
+				9FFC7A1BAD4F5A1E08F1E7CEA2988478 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,79 +250,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		027CE535869D941315DD4940A46FEE7F /* Resources */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		0EF60D671B106A58273755CD56126EB3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BDE2C5941BCEB2FAC953E42F36427706 /* ESTMusicIndicator */,
-				80EF9BF515432767F6A671894DFC7EA7 /* SwiftSpinner */,
-				218DD6C55FB1C71DE403D1A5464D3E6D /* XLPagerTabStrip */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */,
+				8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		15724EA3811E6184644FD393CB744CEE /* Products */ = {
+		1AFBCCD43C351A57C5252F42682E9523 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC4231497C4F5C07BCCE63D63F4A7673 /* ESTMusicIndicator.framework */,
-				0D8FD1D52C2E86DE9E16F1272C5C8887 /* Pods_Tab.framework */,
-				75E51194E6C397D12536B6426A0B5EA1 /* SwiftSpinner.framework */,
-				8E342514CB1C00B8FF9076DAE176F3ED /* XLPagerTabStrip.bundle */,
-				D0643089A6B38173AE2CCEAD9F6AB835 /* XLPagerTabStrip.framework */,
+				DE3F6AD1BD76344A0E824E0F8EAA222A /* ESTMusicIndicator */,
+				34C85A5068A63B7423EAE658729A472A /* IQKeyboardManagerSwift */,
+				693AA563FD995A3A968F85334ABAEF01 /* SwiftSpinner */,
+				8B5D3E6199DAA036A2E4E1FDFC226D39 /* XLPagerTabStrip */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		218DD6C55FB1C71DE403D1A5464D3E6D /* XLPagerTabStrip */ = {
+		34C85A5068A63B7423EAE658729A472A /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				FF01C5FFACD0ACBBC42C99A1A8B7A9FA /* BarPagerTabStripViewController.swift */,
-				8AF7FACF2990AD88F3973264A5CA824C /* BarView.swift */,
-				59208D913AFBCD1C5892179A03D4F4A3 /* BaseButtonBarPagerTabStripViewController.swift */,
-				34167EEFEA2EF0B70D007899FEC898F2 /* ButtonBarPagerTabStripViewController.swift */,
-				E2ED9442496288B087BB56D5F7EDFF17 /* ButtonBarView.swift */,
-				3AED2562D56A9127AAAC62D3131C3804 /* ButtonBarViewCell.swift */,
-				40DA83A30DDD0566F850C4A6BBEB4BC6 /* ButtonCell.xib */,
-				6B81BD1C31287708F9E263F192782D24 /* FXPageControl.h */,
-				EA64CAAA735390452FFF7E87FF2BF038 /* FXPageControl.m */,
-				B840B3ED13A3CB6A9989422A1BD9F854 /* IndicatorInfo.swift */,
-				2D1DF6423AB9820EAD2AA5A4631AD3C5 /* PagerTabStripBehaviour.swift */,
-				01C70C0ED89C0017F55FA11A8E7FAA0A /* PagerTabStripError.swift */,
-				003845E103FAF5AAB35DAAE7A3A99CEF /* PagerTabStripViewController.swift */,
-				9CE43C7C6CE03BA2A014F6BCB99A5DD0 /* SegmentedPagerTabStripViewController.swift */,
-				F5F360C140C98CE39B451F4FE2D1CF7C /* SwipeDirection.swift */,
-				D868969C16841E600F69266D7304F588 /* TwitterPagerTabStripViewController.swift */,
-				027CE535869D941315DD4940A46FEE7F /* Resources */,
-				2B1B4E221089B090EB7B41F87666D414 /* Support Files */,
+				0628D742E55EA48EE9CA195DFB0D6616 /* IQBarButtonItem.swift */,
+				15334C249255AFE87A0A82D0828F67CD /* IQKeyboardManager.swift */,
+				A6A68CA625F298F326D2010042338DF8 /* IQKeyboardManagerConstants.swift */,
+				F1E5AB655E99D4A8D605E44D436AB7CD /* IQKeyboardManagerConstantsInternal.swift */,
+				F85B4CB1CFC7A9E89C2506EF126D2D30 /* IQKeyboardReturnKeyHandler.swift */,
+				4E51B7EAD40BC3FB510C71F19D8F7744 /* IQNSArray+Sort.swift */,
+				D6E6E4A91342D0DA06CA7F4E5C8D7082 /* IQPreviousNextView.swift */,
+				84468B5C6706F9F081283E94A6A26210 /* IQTextView.swift */,
+				43A6B1F038E37B6142B7C941BBDE49D6 /* IQTitleBarButtonItem.swift */,
+				E2DCBCDD5FE41D126889D0EFA7CA464C /* IQToolbar.swift */,
+				CE52C4BAF19CDE8BFF7A64C3A485DFF5 /* IQUIScrollView+Additions.swift */,
+				7B5511F6809070DA55C4EC4FD694BD4D /* IQUITextFieldView+Additions.swift */,
+				58D7FA2593F3BE58FBA85CA0C8248F67 /* IQUIView+Hierarchy.swift */,
+				EFC932828A912E0F3FF845F80A1AB2B6 /* IQUIView+IQKeyboardToolbar.swift */,
+				3B5A31DEF6B561BE6E18A7DEE5046531 /* IQUIViewController+Additions.swift */,
+				4297D17C91A4FB384E5E576CA204B1C3 /* IQUIWindow+Hierarchy.swift */,
+				59C4E6AD095E7F079AFD1EEAA09DF0B5 /* Resources */,
+				69F43032A0D5FE36EBA9ECBC1A1FF95A /* Support Files */,
 			);
-			name = XLPagerTabStrip;
-			path = XLPagerTabStrip;
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
-		2B1B4E221089B090EB7B41F87666D414 /* Support Files */ = {
+		53DA64378F5E898D86A6C64E30A440CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D481AD8D97300EBD0CE0046788B4DF16 /* Info.plist */,
-				6AA84AD5989D211B1E5F1BD9EB41727C /* ResourceBundle-XLPagerTabStrip-Info.plist */,
-				0FAA839946B0128F956233EC38BA6C4C /* XLPagerTabStrip.modulemap */,
-				7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */,
-				D4EE7E1C0291A26C5D44F5692319C6E0 /* XLPagerTabStrip-dummy.m */,
-				326755DADE1B49DE2FA4140D8F4E8397 /* XLPagerTabStrip-prefix.pch */,
-				BC3C8A271DE738E818C39AC88807E8F2 /* XLPagerTabStrip-umbrella.h */,
+				F95920F29DA1D97F13EFEA7FC71F103C /* Info.plist */,
+				9EDE7DE0F6EB7768541D7925C8D8CA0E /* SwiftSpinner.modulemap */,
+				FC0C4624C9514461C3E887DF81A9200B /* SwiftSpinner.xcconfig */,
+				4FC603660124F75827214B8423F63067 /* SwiftSpinner-dummy.m */,
+				469E25D134012C153AF464EB8C1987DE /* SwiftSpinner-prefix.pch */,
+				05B090C06BB93065586DE016E6CA1E0A /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		59C4E6AD095E7F079AFD1EEAA09DF0B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C4FE6BCB36148D38E1E6BF43074FADA /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5B96C7F50F71F03849E3E6F93370E860 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48D867410620D70394082B709317A53B /* Info.plist */,
+				41FEADFA8CCB656CE03DEC6B90BF2BAD /* ResourceBundle-XLPagerTabStrip-Info.plist */,
+				C774DB53AC67A012646718E0C7DD10D3 /* XLPagerTabStrip.modulemap */,
+				7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */,
+				6F2747ADA45E05E5EA550114A026B753 /* XLPagerTabStrip-dummy.m */,
+				1BB00DDAE99053AC6F238EA99196BDD1 /* XLPagerTabStrip-prefix.pch */,
+				DF02C2D0732987F5CD3F253ABE0CBC87 /* XLPagerTabStrip-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/XLPagerTabStrip";
@@ -270,61 +340,77 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		693AA563FD995A3A968F85334ABAEF01 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				0EF60D671B106A58273755CD56126EB3 /* Pods */,
-				15724EA3811E6184644FD393CB744CEE /* Products */,
-				617306C11D4D6BFA955B56AC9ABF512F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		80EF9BF515432767F6A671894DFC7EA7 /* SwiftSpinner */ = {
-			isa = PBXGroup;
-			children = (
-				3A6B187BB7DFBBCA1E2455652DB7AFA8 /* SwiftSpinner.h */,
-				39B19A3400379FFA60D18B93F059D534 /* SwiftSpinner.swift */,
-				81AC63C1BF6DB43B7B328946D9BFF9F3 /* Support Files */,
+				6FBC8DF02C508E8B629373BD60C51D67 /* SwiftSpinner.h */,
+				2D7C45524CC14675EB2E5BB374028127 /* SwiftSpinner.swift */,
+				53DA64378F5E898D86A6C64E30A440CA /* Support Files */,
 			);
 			name = SwiftSpinner;
 			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
-		81AC63C1BF6DB43B7B328946D9BFF9F3 /* Support Files */ = {
+		69F43032A0D5FE36EBA9ECBC1A1FF95A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6BC035CCB5B9500956F56C8B3B5189BA /* Info.plist */,
-				A0347307567C61202B8EEB11C5FB5443 /* SwiftSpinner.modulemap */,
-				093957ABC846D02E9715A26177005E05 /* SwiftSpinner.xcconfig */,
-				0105AF67AEC576545560DEA24FE4918D /* SwiftSpinner-dummy.m */,
-				F3549320C3FB89FB195B4BB4716330DD /* SwiftSpinner-prefix.pch */,
-				5D2D28441116DE9B3997D007FC246DF0 /* SwiftSpinner-umbrella.h */,
+				150D804FE185910BA2B609ADEA2C540E /* Info.plist */,
+				5D27559ED91BE37EAA757C6E8B966450 /* IQKeyboardManagerSwift.modulemap */,
+				B9ABFE43BECC6F41F7811FC5A5F4C71B /* IQKeyboardManagerSwift.xcconfig */,
+				44859A063BF42583A17FC4DF97F437E7 /* IQKeyboardManagerSwift-dummy.m */,
+				53134EC0365CFAB89E59243F9213AE09 /* IQKeyboardManagerSwift-prefix.pch */,
+				75AA7FFCF7BF3F64BF5DE7540BF7EAD8 /* IQKeyboardManagerSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSpinner";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
 			sourceTree = "<group>";
 		};
-		93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */,
-				FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */,
-				3917A50EB224EEDBC66971700D698782 /* UIKit.framework */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				1AFBCCD43C351A57C5252F42682E9523 /* Pods */,
+				F91C243B8CC0E034E62BDE06D485F6AF /* Products */,
+				617306C11D4D6BFA955B56AC9ABF512F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B5D3E6199DAA036A2E4E1FDFC226D39 /* XLPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				61AA501CDB8D6F07E8F1E09A7AB5F10C /* BarPagerTabStripViewController.swift */,
+				5BB5DF09DF7FC4C923FC2CD2EE3A78EA /* BarView.swift */,
+				CAA3CEC7F1E6CAB07AFB0158380B7C82 /* BaseButtonBarPagerTabStripViewController.swift */,
+				398C1285C43A75983DAB07E3EDCF6D3F /* ButtonBarPagerTabStripViewController.swift */,
+				E79F127718EC617C0924CF13F4FE3E0F /* ButtonBarView.swift */,
+				E42DE17CACE5934E8D884EACCBDBA17F /* ButtonBarViewCell.swift */,
+				20D4F3C55FD7BA51F55ED7D9BD82C1FA /* ButtonCell.xib */,
+				82E3ABB2FBBB297578D7F661E362EC06 /* FXPageControl.h */,
+				08E6BA51DFC2F3500106E77175781320 /* FXPageControl.m */,
+				2AB561367046E700A3CB207C40DFA09F /* IndicatorInfo.swift */,
+				D2C941E5F86CB9158B79923BA7419AAB /* PagerTabStripBehaviour.swift */,
+				E1DABBEBB4830A11F762E57ACDC4C15A /* PagerTabStripError.swift */,
+				FD404E69F1F19BC126C93A058BF592ED /* PagerTabStripViewController.swift */,
+				9210A5FB4146FAC7A8F0EC42C2D352E6 /* SegmentedPagerTabStripViewController.swift */,
+				C76D007760AF04DD9F2E3666F664500A /* SwipeDirection.swift */,
+				D5C8A46CD33235ADA85CF433F4AFBA5C /* TwitterPagerTabStripViewController.swift */,
+				F348BD6DAA995EAA2855C634E9CD60CC /* Resources */,
+				5B96C7F50F71F03849E3E6F93370E860 /* Support Files */,
+			);
+			name = XLPagerTabStrip;
+			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */,
+				ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */,
+				E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */,
+				FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		BDE2C5941BCEB2FAC953E42F36427706 /* ESTMusicIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				F1FED7B5CB1A129616ABD39C15276FF7 /* ESTMusicIndicatorContentView.swift */,
-				23EFAF26E790CB65F09619340A98FAFC /* ESTMusicIndicatorView.swift */,
-				F92E0E013508BE0078BC72999DB62996 /* Support Files */,
-			);
-			name = ESTMusicIndicator;
-			path = ESTMusicIndicator;
 			sourceTree = "<group>";
 		};
 		D22E46CD40871BB74D1E1CBB1EAF396A /* Pods-Tab */ = {
@@ -345,46 +431,68 @@
 			path = "Target Support Files/Pods-Tab";
 			sourceTree = "<group>";
 		};
-		F92E0E013508BE0078BC72999DB62996 /* Support Files */ = {
+		DE3F6AD1BD76344A0E824E0F8EAA222A /* ESTMusicIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				C323198612B840822B429ADC6BACC0DB /* ESTMusicIndicator.modulemap */,
-				001C8CC0D00EF38B06EA149DA2C57844 /* ESTMusicIndicator.xcconfig */,
-				E9BBE30F79A60F841F326EDBC7EC41BB /* ESTMusicIndicator-dummy.m */,
-				C668E7A1405B9171D5C163C4CF30082F /* ESTMusicIndicator-prefix.pch */,
-				C82EE28B4D76DD4569621A94ED3F230F /* ESTMusicIndicator-umbrella.h */,
-				B1CC35EF9C99A95BDD3B245B684E765A /* Info.plist */,
+				08CAE2E668E110329CEE921C6698A093 /* ESTMusicIndicatorContentView.swift */,
+				4742A297C014FFB79E689C2B927694F3 /* ESTMusicIndicatorView.swift */,
+				F48E8769726F103DDAA25788B4D39899 /* Support Files */,
+			);
+			name = ESTMusicIndicator;
+			path = ESTMusicIndicator;
+			sourceTree = "<group>";
+		};
+		F348BD6DAA995EAA2855C634E9CD60CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F48E8769726F103DDAA25788B4D39899 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E6F78E2C2C42F567A9535B3FBDD07A /* ESTMusicIndicator.modulemap */,
+				D1DBC794072E0CC73847025D411D9AC1 /* ESTMusicIndicator.xcconfig */,
+				8EAA0F895453A90386B98537F7287FB6 /* ESTMusicIndicator-dummy.m */,
+				491B06F2201D1AA5FF725CB165F14325 /* ESTMusicIndicator-prefix.pch */,
+				3A255DB8F0232D702002D88640C53B8D /* ESTMusicIndicator-umbrella.h */,
+				3F0ABFBE1186669AADE1FD4C563AFE0E /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ESTMusicIndicator";
 			sourceTree = "<group>";
 		};
+		F91C243B8CC0E034E62BDE06D485F6AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB56A6D0C80FAF34D05FA86DFA2C91F2 /* ESTMusicIndicator.framework */,
+				C23399F86371C5EF43E5806C99DCECE6 /* IQKeyboardManagerSwift.framework */,
+				DDA3DBD8D0EF1C672819C160092F27FC /* Pods_Tab.framework */,
+				D8E5E539E5CA399066F66F50C08C2320 /* SwiftSpinner.framework */,
+				2BA1E59B5374EFDE9A2CAA6C19530498 /* XLPagerTabStrip.bundle */,
+				5EEC8829BE628BB0DDD5984D41BA41C9 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		22E52FABE3A9C8C48C8633B146A207BB /* Headers */ = {
+		0A2FD5AFAB29C9F9C1B3DC13D0C52BC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3098D20E3FCCECEF0E84D720DECC8363 /* FXPageControl.h in Headers */,
-				FF2E457E42E42A6E46F96B4E7BD61004 /* XLPagerTabStrip-umbrella.h in Headers */,
+				AE0C90F0259E089BFBB577EE6B095524 /* FXPageControl.h in Headers */,
+				1B074749607463F9FBBC073BAFE69B3E /* XLPagerTabStrip-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43453709650B10A405A3B7490A54DF6A /* Headers */ = {
+		13595343106B25AAB8FFFD9735B3947B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FA97C58A4DA27B422ABEB363F8CFB5 /* SwiftSpinner-umbrella.h in Headers */,
-				9CF01F23321226AB38D1743F7CF55541 /* SwiftSpinner.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9914F6F19E02D63177977C0327BF8488 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E9093D5FCC9BD254695090E90AFB1C4 /* Pods-Tab-umbrella.h in Headers */,
+				F9B5507F453BC70AA37A4645CB4CC312 /* Pods-Tab-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,36 +504,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C82B5F04767CB991E84734A54D0ABA5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE4EB62435C72C177F24A9C2B37E351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34772ABA29B3E57315FF88425BE45B6B /* SwiftSpinner-umbrella.h in Headers */,
+				634BC097A6CCC9BFABB9752BA0934F50 /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13D851BE65A76BAD7166852802ED31B6 /* Pods-Tab */ = {
+		00170C839833BBA75D6ECDFF14E99A98 /* XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E584DC359D4C3C00A98CE29841427DDC /* Build configuration list for PBXNativeTarget "Pods-Tab" */;
+			buildConfigurationList = 7F8AF2BC7A9585021C4CA4BA6276E7C6 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
 			buildPhases = (
-				298D39C9B6710A6836E876D68C83CF6D /* Sources */,
-				9EC3E4BF926550DCAC3F55E3D318FEDB /* Frameworks */,
-				9914F6F19E02D63177977C0327BF8488 /* Headers */,
+				0C6F84B83B64D9294DA92B3109BA0E7C /* Sources */,
+				F05404D3BD1A56FDD2D9250B231C0A7A /* Frameworks */,
+				9CB2A10F2639A544C70DA52EFCA1DB64 /* Resources */,
+				0A2FD5AFAB29C9F9C1B3DC13D0C52BC9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				77F51A31162302271B7E3967B1086947 /* PBXTargetDependency */,
-				3D161EE79E1AD839EE5B5CF4B45A2FDC /* PBXTargetDependency */,
-				6ABBB2921F9B586D8B33619B266A4959 /* PBXTargetDependency */,
+				2263D5260A950C939C82A3EE3D44D168 /* PBXTargetDependency */,
 			);
-			name = "Pods-Tab";
-			productName = "Pods-Tab";
-			productReference = 0D8FD1D52C2E86DE9E16F1272C5C8887 /* Pods_Tab.framework */;
+			name = XLPagerTabStrip;
+			productName = XLPagerTabStrip;
+			productReference = 5EEC8829BE628BB0DDD5984D41BA41C9 /* XLPagerTabStrip.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		38679C7C0122059E4E8B517D35339510 /* XLPagerTabStrip-XLPagerTabStrip */ = {
+		58A3A52056CBB13F5DB61341B6A5676E /* XLPagerTabStrip-XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA6859CE192AE404D38DA922CC7EECF0 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildConfigurationList = 17A4AF033C041B5C723448EDF02F4E9B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
 			buildPhases = (
-				A43F90C17EE18CEF6B3A62DA851B04F8 /* Sources */,
-				171933307EED945170D27BF366D147BB /* Frameworks */,
-				6D7590E55EF4B36BC83A5842A6122929 /* Resources */,
+				1984B385F862CDE306F8183DDFF88411 /* Sources */,
+				8625C6F16E11723CD8691A514A237D98 /* Frameworks */,
+				6B732D5866ED01F21DF8BCF4A6CA7C66 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -433,16 +557,55 @@
 			);
 			name = "XLPagerTabStrip-XLPagerTabStrip";
 			productName = "XLPagerTabStrip-XLPagerTabStrip";
-			productReference = 8E342514CB1C00B8FF9076DAE176F3ED /* XLPagerTabStrip.bundle */;
+			productReference = 2BA1E59B5374EFDE9A2CAA6C19530498 /* XLPagerTabStrip.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		86076C1B5AE7CFCBC13A29A54E494E17 /* SwiftSpinner */ = {
+		6AB5EB7BCEC27CD6DC6F9745A64E4FD4 /* Pods-Tab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB3688A25B64EA8E584170E3DEFFF7A5 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildConfigurationList = B2E6FB396D4A1BEBE4467BFA95C176C4 /* Build configuration list for PBXNativeTarget "Pods-Tab" */;
 			buildPhases = (
-				EEE48BAB943A400D0F94368880427F7C /* Sources */,
-				BCB7D0E5009E449F3A0EB103077CA639 /* Frameworks */,
-				43453709650B10A405A3B7490A54DF6A /* Headers */,
+				B11010E33CC48C3B982BE52864F2AE76 /* Sources */,
+				A68ADB0F4B1862612AE4D0BE45003BA1 /* Frameworks */,
+				13595343106B25AAB8FFFD9735B3947B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29083DAA80B1DDAF205071D7327E2D2D /* PBXTargetDependency */,
+				17083AFDD197D4113E26BB2566419B46 /* PBXTargetDependency */,
+				4FD8513CB9D76C7CA643B044CEAE6B32 /* PBXTargetDependency */,
+				0F47F86DBE41BD56F7CA2E9CCA726598 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tab";
+			productName = "Pods-Tab";
+			productReference = DDA3DBD8D0EF1C672819C160092F27FC /* Pods_Tab.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C5CE05A712EF50BB123A41D8EFC0CB /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				B0CAA73D50E134E589B648ABF6682839 /* Sources */,
+				81A5C814ACEB86CB06CD6C51383982FE /* Frameworks */,
+				918D58E08AC7FD6CC66B75FF048005F7 /* Resources */,
+				C82B5F04767CB991E84734A54D0ABA5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = C23399F86371C5EF43E5806C99DCECE6 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA6B7B1B77A9B35077428F50E7B03ACC /* SwiftSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77220D45C6741609835D848EBB14673 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildPhases = (
+				F9A081377D73373005997375134519DA /* Sources */,
+				6AC3586525B9C237E882DB4DE130C264 /* Frameworks */,
+				DFE4EB62435C72C177F24A9C2B37E351 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -450,26 +613,7 @@
 			);
 			name = SwiftSpinner;
 			productName = SwiftSpinner;
-			productReference = 75E51194E6C397D12536B6426A0B5EA1 /* SwiftSpinner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B5CA02424E0E807BACCC3AC4A15D2E87 /* XLPagerTabStrip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3078CF37DD510B005BE2E6547048E6A0 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
-			buildPhases = (
-				93E28AFABCB91AF883F27828CF79308C /* Sources */,
-				BE6B50CC1EE13590358642D831E21F5E /* Frameworks */,
-				A06D8692FFAE007DA5A8E5AB67828BF7 /* Resources */,
-				22E52FABE3A9C8C48C8633B146A207BB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3D434BA78CF413B418C75A8D9E8AB1C /* PBXTargetDependency */,
-			);
-			name = XLPagerTabStrip;
-			productName = XLPagerTabStrip;
-			productReference = D0643089A6B38173AE2CCEAD9F6AB835 /* XLPagerTabStrip.framework */;
+			productReference = D8E5E539E5CA399066F66F50C08C2320 /* SwiftSpinner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD5FD6B466BE76A6A56858FB9F9B693E /* ESTMusicIndicator */ = {
@@ -486,7 +630,7 @@
 			);
 			name = ESTMusicIndicator;
 			productName = ESTMusicIndicator;
-			productReference = CC4231497C4F5C07BCCE63D63F4A7673 /* ESTMusicIndicator.framework */;
+			productReference = AB56A6D0C80FAF34D05FA86DFA2C91F2 /* ESTMusicIndicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -506,44 +650,75 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 15724EA3811E6184644FD393CB744CEE /* Products */;
+			productRefGroup = F91C243B8CC0E034E62BDE06D485F6AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD5FD6B466BE76A6A56858FB9F9B693E /* ESTMusicIndicator */,
-				13D851BE65A76BAD7166852802ED31B6 /* Pods-Tab */,
-				86076C1B5AE7CFCBC13A29A54E494E17 /* SwiftSpinner */,
-				B5CA02424E0E807BACCC3AC4A15D2E87 /* XLPagerTabStrip */,
-				38679C7C0122059E4E8B517D35339510 /* XLPagerTabStrip-XLPagerTabStrip */,
+				C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */,
+				6AB5EB7BCEC27CD6DC6F9745A64E4FD4 /* Pods-Tab */,
+				DA6B7B1B77A9B35077428F50E7B03ACC /* SwiftSpinner */,
+				00170C839833BBA75D6ECDFF14E99A98 /* XLPagerTabStrip */,
+				58A3A52056CBB13F5DB61341B6A5676E /* XLPagerTabStrip-XLPagerTabStrip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6D7590E55EF4B36BC83A5842A6122929 /* Resources */ = {
+		6B732D5866ED01F21DF8BCF4A6CA7C66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FBDBC724F5A3F9AE346DF718FCF520 /* ButtonCell.xib in Resources */,
+				AD6AE38029D5E372DA0602FA1F1C8749 /* ButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A06D8692FFAE007DA5A8E5AB67828BF7 /* Resources */ = {
+		918D58E08AC7FD6CC66B75FF048005F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337AD114D41D222D827FC299CD096900 /* XLPagerTabStrip.bundle in Resources */,
+				2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB2A10F2639A544C70DA52EFCA1DB64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD54D85BB45539A6E173681DACB7C54 /* XLPagerTabStrip.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		298D39C9B6710A6836E876D68C83CF6D /* Sources */ = {
+		0C6F84B83B64D9294DA92B3109BA0E7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4891053D2D079FEEA7A56624EA96B5AD /* Pods-Tab-dummy.m in Sources */,
+				00594B0AB47A69A73615D54FEAE86BC8 /* BarPagerTabStripViewController.swift in Sources */,
+				FC3F7EE1F6DFC619AFA7EA2CCF07C352 /* BarView.swift in Sources */,
+				C076F5EEB40C0F44E94718B19CC7C5E6 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				A05CF71AD2C9DA6CF649FC09EF65A06C /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				88F1B199898D827F076C7E5D2801C74E /* ButtonBarView.swift in Sources */,
+				21A82CC9E785672CFB776B2A347E8196 /* ButtonBarViewCell.swift in Sources */,
+				1E31E2513652005794C65A06063F8D06 /* ButtonCell.xib in Sources */,
+				2E37753CF11E7512482E6AB789FC3623 /* FXPageControl.m in Sources */,
+				B68EF40152EDAF9ED712B6F924EAE284 /* IndicatorInfo.swift in Sources */,
+				B35688AFA0303C1E1A5114C8DBF27F22 /* PagerTabStripBehaviour.swift in Sources */,
+				6EE774D2C5363B8CB0A5966C35999481 /* PagerTabStripError.swift in Sources */,
+				D319076257AEAC6E220A6F246AE61F7F /* PagerTabStripViewController.swift in Sources */,
+				A53741E54CCF36099062B7C4478A0423 /* SegmentedPagerTabStripViewController.swift in Sources */,
+				40E8952F09526866EDDBC88464726B34 /* SwipeDirection.swift in Sources */,
+				FED3FA19B49C30D8BE409A39D132DD7B /* TwitterPagerTabStripViewController.swift in Sources */,
+				81555934A91F7DEAA6F45C19AE3B7981 /* XLPagerTabStrip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1984B385F862CDE306F8183DDFF88411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,92 +732,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93E28AFABCB91AF883F27828CF79308C /* Sources */ = {
+		B0CAA73D50E134E589B648ABF6682839 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B6C768E48AA3967E97B0970DB10397C /* BarPagerTabStripViewController.swift in Sources */,
-				68D398398D5C03DA76260C0483556A5F /* BarView.swift in Sources */,
-				9BA6925C474A91FCE41C896D276CCA57 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
-				C5D4003C3BD8CCDBBE9BC7E88FC3E231 /* ButtonBarPagerTabStripViewController.swift in Sources */,
-				B8B0DFDE8E92D07E42CC9D47BD64183D /* ButtonBarView.swift in Sources */,
-				D8FEA1D21CCD042C8DEDDFBD62641901 /* ButtonBarViewCell.swift in Sources */,
-				20A5E1B491FE4631BEA49C89904491E9 /* ButtonCell.xib in Sources */,
-				F75276BAC4CC82B7061E236690AE9405 /* FXPageControl.m in Sources */,
-				AB690E6E012506D4506052D485AA1650 /* IndicatorInfo.swift in Sources */,
-				3727CF2D7AC207BC8F18B31A7B8086B4 /* PagerTabStripBehaviour.swift in Sources */,
-				6A329EA61227039461A1F5E39CD4E2E2 /* PagerTabStripError.swift in Sources */,
-				13E7CE046B2741C9BFDFFD1A1C86401F /* PagerTabStripViewController.swift in Sources */,
-				3B0EEFC5488A72C43633A04173155D3D /* SegmentedPagerTabStripViewController.swift in Sources */,
-				1C12354D6318DEF453285B9902D0E7EC /* SwipeDirection.swift in Sources */,
-				DFFF96E8C7CDF6F7EEA257990B173566 /* TwitterPagerTabStripViewController.swift in Sources */,
-				F04B8D160EF1E57CD1FDAE662A004899 /* XLPagerTabStrip-dummy.m in Sources */,
+				F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */,
+				4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */,
+				9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */,
+				EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */,
+				CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */,
+				88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */,
+				1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */,
+				02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */,
+				2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */,
+				B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */,
+				3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */,
+				9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */,
+				64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A43F90C17EE18CEF6B3A62DA851B04F8 /* Sources */ = {
+		B11010E33CC48C3B982BE52864F2AE76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B38AAC02E4A126C9F8E5FFDBE96C40C /* Pods-Tab-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEE48BAB943A400D0F94368880427F7C /* Sources */ = {
+		F9A081377D73373005997375134519DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A2A111FC4E38A5607228CFBC8473B9 /* SwiftSpinner-dummy.m in Sources */,
-				79D3E12578113FFDE55637D3CBDC9CBD /* SwiftSpinner.swift in Sources */,
+				69F309D14F21839461F9D21E3A174870 /* SwiftSpinner-dummy.m in Sources */,
+				6448104184B5860017C103F92B359ECF /* SwiftSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D161EE79E1AD839EE5B5CF4B45A2FDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSpinner;
-			target = 86076C1B5AE7CFCBC13A29A54E494E17 /* SwiftSpinner */;
-			targetProxy = 59B6497B094BD60D8253574583CF854C /* PBXContainerItemProxy */;
-		};
-		6ABBB2921F9B586D8B33619B266A4959 /* PBXTargetDependency */ = {
+		0F47F86DBE41BD56F7CA2E9CCA726598 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XLPagerTabStrip;
-			target = B5CA02424E0E807BACCC3AC4A15D2E87 /* XLPagerTabStrip */;
-			targetProxy = ACFCAAB995AAAC4A56B99141EA3C3CBB /* PBXContainerItemProxy */;
+			target = 00170C839833BBA75D6ECDFF14E99A98 /* XLPagerTabStrip */;
+			targetProxy = 1C9AC707508C1D944A071B8E75285A61 /* PBXContainerItemProxy */;
 		};
-		77F51A31162302271B7E3967B1086947 /* PBXTargetDependency */ = {
+		17083AFDD197D4113E26BB2566419B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */;
+			targetProxy = 97B66C226FE8C13248AD91982505B4C5 /* PBXContainerItemProxy */;
+		};
+		2263D5260A950C939C82A3EE3D44D168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = 58A3A52056CBB13F5DB61341B6A5676E /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = F8B93CAF6F2C675BC8E7C376AB232CF9 /* PBXContainerItemProxy */;
+		};
+		29083DAA80B1DDAF205071D7327E2D2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ESTMusicIndicator;
 			target = FD5FD6B466BE76A6A56858FB9F9B693E /* ESTMusicIndicator */;
-			targetProxy = A9388525B83CABFB79D2FFEC8DCFB880 /* PBXContainerItemProxy */;
+			targetProxy = 98B59538CFDB04022D20B562A5B3F9CC /* PBXContainerItemProxy */;
 		};
-		C3D434BA78CF413B418C75A8D9E8AB1C /* PBXTargetDependency */ = {
+		4FD8513CB9D76C7CA643B044CEAE6B32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "XLPagerTabStrip-XLPagerTabStrip";
-			target = 38679C7C0122059E4E8B517D35339510 /* XLPagerTabStrip-XLPagerTabStrip */;
-			targetProxy = 37F700B8D5B110A34963E07C7AE2D086 /* PBXContainerItemProxy */;
+			name = SwiftSpinner;
+			target = DA6B7B1B77A9B35077428F50E7B03ACC /* SwiftSpinner */;
+			targetProxy = D5C366992A7A9DA225E331DFCFA93592 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34FF4B72226ACA68F2B4BB8E10024550 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		3AC801864BC0EABDB4C2B798B50342A9 /* Debug */ = {
+		0259AD040DC6F61B6480C31FAAE3355D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D0CD2D8140CF9AE1A1A634DD491AC07 /* Pods-Tab.debug.xcconfig */;
 			buildSettings = {
@@ -670,6 +837,165 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A801E4B39023B5B4001205A93B08743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6FF21D7F03A5A563CC5D12F7A433CB /* Pods-Tab.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tab/Pods-Tab.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22FAD6FB911D7F658B718784FA3F4AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		314362E8707D72D034FEC8CFBFB11726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9ABFE43BECC6F41F7811FC5A5F4C71B /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C54127156507C6A85C0DA22D352B1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0C4624C9514461C3E887DF81A9200B /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A3F15554BF0C216D222E5F6E056674F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -731,72 +1057,9 @@
 			};
 			name = Release;
 		};
-		62DBA5F960A4152D990BF07AE1555E93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 093957ABC846D02E9715A26177005E05 /* SwiftSpinner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				PRODUCT_NAME = SwiftSpinner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		67BFE1A1FC09645190AFF6E983228A12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 093957ABC846D02E9715A26177005E05 /* SwiftSpinner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				PRODUCT_NAME = SwiftSpinner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		737D8022AFABC4B3977F8099265C40CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 001C8CC0D00EF38B06EA149DA2C57844 /* ESTMusicIndicator.xcconfig */;
+			baseConfigurationReference = D1DBC794072E0CC73847025D411D9AC1 /* ESTMusicIndicator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -826,40 +1089,9 @@
 			};
 			name = Release;
 		};
-		782AAE908A10AD2B7AD55BB8A69BE47F /* Debug */ = {
+		A44374447CC4B0DBEFE6AA9526F9B677 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7BC33503119581E845BF45FB6879CEB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */;
+			baseConfigurationReference = 7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
@@ -871,43 +1103,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
-		};
-		7FBC036F9394D9EBB2705C0AA9012DCB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AED7FB7311B6410F8982065AB82DA08 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 		B5DC219507B2AE503E92F4F1333726EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 001C8CC0D00EF38B06EA149DA2C57844 /* ESTMusicIndicator.xcconfig */;
+			baseConfigurationReference = D1DBC794072E0CC73847025D411D9AC1 /* ESTMusicIndicator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -936,9 +1136,9 @@
 			};
 			name = Debug;
 		};
-		C2A5DCD68682DF7A1C7D6E4806C5C13E /* Release */ = {
+		BD6CE8081B7D1EC5791B2E9C17220EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A6FF21D7F03A5A563CC5D12F7A433CB /* Pods-Tab.release.xcconfig */;
+			baseConfigurationReference = FC0C4624C9514461C3E887DF81A9200B /* SwiftSpinner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -949,20 +1149,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Tab/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Tab/Pods-Tab.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Tab;
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_NAME = SwiftSpinner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDCD46C296262746A887ADB55B1EFAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9ABFE43BECC6F41F7811FC5A5F4C71B /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1030,9 +1260,34 @@
 			};
 			name = Debug;
 		};
+		F443BDAE1215A33FBBD8CB4E3F537C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7455AA0CF140707FC8FC33DE5399A854 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17A4AF033C041B5C723448EDF02F4E9B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44374447CC4B0DBEFE6AA9526F9B677 /* Debug */,
+				F443BDAE1215A33FBBD8CB4E3F537C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1042,11 +1297,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3078CF37DD510B005BE2E6547048E6A0 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+		7F8AF2BC7A9585021C4CA4BA6276E7C6 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				782AAE908A10AD2B7AD55BB8A69BE47F /* Debug */,
-				7FBC036F9394D9EBB2705C0AA9012DCB /* Release */,
+				4A3F15554BF0C216D222E5F6E056674F /* Debug */,
+				22FAD6FB911D7F658B718784FA3F4AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1060,29 +1315,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB3688A25B64EA8E584170E3DEFFF7A5 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+		B2E6FB396D4A1BEBE4467BFA95C176C4 /* Build configuration list for PBXNativeTarget "Pods-Tab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62DBA5F960A4152D990BF07AE1555E93 /* Debug */,
-				67BFE1A1FC09645190AFF6E983228A12 /* Release */,
+				0259AD040DC6F61B6480C31FAAE3355D /* Debug */,
+				0A801E4B39023B5B4001205A93B08743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E584DC359D4C3C00A98CE29841427DDC /* Build configuration list for PBXNativeTarget "Pods-Tab" */ = {
+		B77220D45C6741609835D848EBB14673 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AC801864BC0EABDB4C2B798B50342A9 /* Debug */,
-				C2A5DCD68682DF7A1C7D6E4806C5C13E /* Release */,
+				3C54127156507C6A85C0DA22D352B1A8 /* Debug */,
+				BD6CE8081B7D1EC5791B2E9C17220EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA6859CE192AE404D38DA922CC7EECF0 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+		E8C5CE05A712EF50BB123A41D8EFC0CB /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34FF4B72226ACA68F2B4BB8E10024550 /* Debug */,
-				7BC33503119581E845BF45FB6879CEB5 /* Release */,
+				314362E8707D72D034FEC8CFBFB11726 /* Debug */,
+				DDCD46C296262746A887ADB55B1EFAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

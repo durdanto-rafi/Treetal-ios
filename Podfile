@@ -7,4 +7,5 @@ target 'Tab' do
   pod 'XLPagerTabStrip', '~> 8.0'
   pod 'ESTMusicIndicator'
   pod 'SwiftSpinner'
+  pod 'IQKeyboardManagerSwift'
 end
