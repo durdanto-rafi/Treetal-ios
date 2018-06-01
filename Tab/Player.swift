@@ -87,6 +87,15 @@ class Player: UIViewController, IndicatorInfoProvider {
         musicView.state = .stopped
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        print("Player")
+        if playTapped
+        {
+            musicView.state = .playing
+        }
+    }
 
     override func didReceiveMemoryWarning()
     {

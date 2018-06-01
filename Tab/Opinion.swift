@@ -17,6 +17,8 @@ class Opinion: UIViewController, IndicatorInfoProvider
     @IBOutlet weak var txtAddress: UITextField!
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var lblHeading: UILabel!
+    @IBOutlet weak var btnSend: UIButton!
+    @IBOutlet weak var lblPoweredBy: UILabel!
     
     @IBAction func btnIHTapped(_ sender: Any)
     {
@@ -73,6 +75,9 @@ class Opinion: UIViewController, IndicatorInfoProvider
         setNameIcon()
         setAddressIcon()
         hideKeyboard()
+        btnSend.titleLabel?.font = UIFont(name: "JuraBook", size: 16)
+        lblHeading.font = UIFont(name: "JuraBook", size: 18)
+        lblPoweredBy.font = UIFont(name: "JuraBook", size: 12)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -102,7 +107,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let image = UIImage(named: "icon_name")
         imageView.image = image
         txtName.leftView = imageView
-        
+        txtName?.font = UIFont(name: "JuraBook", size: 16)
     }
     
     func setOpinionIcon()
@@ -113,6 +118,8 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let image = UIImage(named: "icon_message")
         imageView.image = image
         txtOpinion.leftView = imageView
+        txtOpinion?.font = UIFont(name: "JuraBook", size: 16)
+        
     }
     
     func setAddressIcon()
@@ -123,6 +130,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let image = UIImage(named: "icon_address")
         imageView.image = image
         txtAddress.leftView = imageView
+        txtAddress?.font = UIFont(name: "JuraBook", size: 16)
     }
     
     func sendRequest()
@@ -207,6 +215,7 @@ class Opinion: UIViewController, IndicatorInfoProvider
         let needsConnection = flags.contains(.connectionRequired)
         return (isReachable && !needsConnection)
     }
+    
 }
 
 extension UIViewController

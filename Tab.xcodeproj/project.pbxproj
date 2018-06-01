@@ -18,6 +18,7 @@
 		610955121FC2A08300659B7A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955111FC2A08300659B7A /* ParentViewController.swift */; };
 		610955141FC2A2CE00659B7A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955131FC2A2CE00659B7A /* Player.swift */; };
 		610955161FC2A2DF00659B7A /* Opinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610955151FC2A2DF00659B7A /* Opinion.swift */; };
+		6139574020C1852D0072962C /* JuraBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6139573F20C1852D0072962C /* JuraBook.ttf */; };
 		614B7D341FC82CD700D4671D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B7D331FC82CD700D4671D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		610955111FC2A08300659B7A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		610955131FC2A2CE00659B7A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		610955151FC2A2DF00659B7A /* Opinion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opinion.swift; sourceTree = "<group>"; };
+		6139573F20C1852D0072962C /* JuraBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = JuraBook.ttf; path = Resources/JuraBook.ttf; sourceTree = "<group>"; };
 		614B7D331FC82CD700D4671D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		903FB4CE4BF3E1137EB70447 /* Pods_Tab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DF964A26686F6D77DD80D0 /* Pods-Tab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tab/Pods-Tab.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		610954D71FC29FDB00659B7A = {
 			isa = PBXGroup;
 			children = (
+				6139573F20C1852D0072962C /* JuraBook.ttf */,
 				610954E21FC29FDB00659B7A /* Tab */,
 				610954F71FC29FDB00659B7A /* TabTests */,
 				610955021FC29FDB00659B7A /* TabUITests */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610954EE1FC29FDB00659B7A /* LaunchScreen.storyboard in Resources */,
+				6139574020C1852D0072962C /* JuraBook.ttf in Resources */,
 				610954EB1FC29FDB00659B7A /* Assets.xcassets in Resources */,
 				610954E91FC29FDB00659B7A /* Main.storyboard in Resources */,
 			);

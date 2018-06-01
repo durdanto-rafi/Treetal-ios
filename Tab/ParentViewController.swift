@@ -22,7 +22,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController
     {
         setBackgroundImage()
         prepareTabs()
-        SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 18.0))
+        SwiftSpinner.setTitleFont(UIFont(name: "JuraBook", size: 18.0))
         super.viewDidLoad()
     }
     
@@ -35,11 +35,11 @@ class ParentViewController: ButtonBarPagerTabStripViewController
     
     func prepareTabs()
     {
-        // change selected bar color
-        //settings.style.buttonBarItemBackgroundColor = UIColor(patternImage: UIImage(named: "blackish_transparent")!)
         settings.style.buttonBarItemBackgroundColor = UIColor.black.withAlphaComponent(0.2)
         settings.style.selectedBarBackgroundColor = .white
-        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 12)
+        if let font = UIFont(name: "JuraBook", size: CGFloat(14.0)) {
+            settings.style.buttonBarItemFont = font
+        }
         settings.style.selectedBarHeight = 2.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .white
@@ -59,7 +59,6 @@ class ParentViewController: ButtonBarPagerTabStripViewController
         UIImage(named: "bg_player")?.draw(in: self.view.bounds)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         view.backgroundColor = UIColor.init(patternImage: image!)
     }
 }
