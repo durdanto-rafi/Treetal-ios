@@ -15,11 +15,14 @@ import SwiftSpinner
 
 class Player: UIViewController, IndicatorInfoProvider {
     
-    @IBOutlet weak var esMusicView: ESTMusicIndicatorView!
+    
+    @IBOutlet weak var musicView: ESTMusicIndicatorView!
     // Initialization
     var avPlayer: AVPlayer!
     @IBOutlet weak var btnPlay: UIButton!
     var playTapped : Bool = false
+    
+    
     
     @IBAction func btnFacebookTapped(_ sender: Any)
     {
@@ -75,17 +78,13 @@ class Player: UIViewController, IndicatorInfoProvider {
             avPlayer.pause()
             playTapped = false
             btnPlay.setImage(UIImage(named: "play"), for: UIControlState.normal)
+            musicView.state = .stopped
         }
         
     }
     override func viewDidLoad()
     {
-        let indicator = ESTMusicIndicatorView.init(frame: CGRect.zero)
-        indicator.tintColor = .red
-        indicator.sizeToFit()
-        indicator.state = .playing;
-        //esMusicView.addSubview(indicator)
-        //esMusicView = indicator
+        musicView.state = .stopped
         super.viewDidLoad()
     }
 
@@ -141,6 +140,12 @@ class Player: UIViewController, IndicatorInfoProvider {
             {
                 print("play started")
                 SwiftSpinner.hide()
+                
+                // Accessing UI from background task
+                DispatchQueue.main.async()
+                {
+                    self.musicView.state = .playing
+                }
             }
         }
     }
