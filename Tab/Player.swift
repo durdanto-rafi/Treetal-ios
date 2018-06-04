@@ -62,10 +62,8 @@ class Player: UIViewController, IndicatorInfoProvider {
             if isInternetAvailable()
             {
                 print("Haz Interwebz!")
-                btnPlay.setImage(UIImage(named: "stop"), for: UIControlState.normal)
                 self.getStreamingLink()
-                playTapped = true
-                SwiftSpinner.show("Player initializing, Please wait for a while!")
+                self.playerState(state: true)
             }
             else
             {
@@ -76,9 +74,7 @@ class Player: UIViewController, IndicatorInfoProvider {
         else
         {
             avPlayer.pause()
-            playTapped = false
-            btnPlay.setImage(UIImage(named: "play"), for: UIControlState.normal)
-            musicView.state = .stopped
+            self.playerState(state: false)
         }
         
     }
@@ -110,8 +106,18 @@ class Player: UIViewController, IndicatorInfoProvider {
         
         session.dataTask(with: url)
         {
-            (data, response, err) in
-            if let data = data
+            (data, response, error) in
+            if error != nil
+            {
+                // Accessing UI from background task
+                DispatchQueue.main.async()
+                {
+                    self.showALert(title: "Warning !", message: "Connection timeout!")
+                    self.playerState(state: false)
+                }
+                return
+            }
+            else if let data = data
             {
                 self.preparePlayer(link: String(data: data, encoding: .utf8)!)
             }
@@ -134,6 +140,8 @@ class Player: UIViewController, IndicatorInfoProvider {
         catch let error as NSError
         {
             print("Failed to set the audio session category and mode: \(error.localizedDescription)")
+            showALert(title: "Warning !", message: "Can't connect to the server")
+            self.playerState(state: false)
         }
         
         avPlayer.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions.new, context: nil)
@@ -158,7 +166,6 @@ class Player: UIViewController, IndicatorInfoProvider {
             }
         }
     }
-    
     
     
     // Checking for Internet connectivity
@@ -189,8 +196,22 @@ class Player: UIViewController, IndicatorInfoProvider {
     // Displaying Alert
     func showALert(title : String, message : String)
     {
-        let alertController = UIAlertController(title: title, message:message, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+        SwiftSpinner.show(message, animated: false).addTapHandler({SwiftSpinner.hide()}, subtitle: "Tap to dismiss!")
+    }
+    
+    func playerState(state : Bool)
+    {
+        if state
+        {
+            playTapped = true
+            btnPlay.setImage(UIImage(named: "stop"), for: UIControlState.normal)
+            SwiftSpinner.show("Player initializing, Please wait for a while!")
+        }
+        else
+        {
+            playTapped = false
+            btnPlay.setImage(UIImage(named: "play"), for: UIControlState.normal)
+            musicView.state = .stopped
+        }
     }
 }
